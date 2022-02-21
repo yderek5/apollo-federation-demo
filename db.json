@@ -1,0 +1,36 @@
+{
+  "astronauts": [
+    {
+      "id": 1,
+      "name": "Buzz Aldrin"
+    },
+    {
+      "id": 2,
+      "name": "William Anders"
+    },
+    {
+      "id": 3,
+      "name": "Neil Armstrong"
+    },
+    {
+      "id": 4,
+      "name": "Alan Bean"
+    },
+    {
+      "id": 5,
+      "name": "Frank Borman"
+    },
+    {
+      "id": 6,
+      "name": "Eugene Cernan"
+    },
+    {
+      "id": 7,
+      "name": "Roger B. Chaffe"
+    },
+    {
+      "id": 8,
+      "name": "Michael Collins"
+    }
+  ]
+}

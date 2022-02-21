@@ -1,0 +1,32 @@
+{
+  "name": "apollo-federation-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "concurrently -k npm:server:*",
+    "server:rest": "json-server -q db.json",
+    "server:astronaut": "nodemon astronauts.js",
+    "server:graphql": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yderek5/apollo-federation-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yderek5/apollo-federation-demo/issues"
+  },
+  "homepage": "https://github.com/yderek5/apollo-federation-demo#readme",
+  "dependencies": {
+    "@apollo/federation": "^0.35.1",
+    "@apollo/gateway": "^0.48.1",
+    "apollo-server": "^3.6.3",
+    "concurrently": "^7.0.0",
+    "json-server": "^0.17.0",
+    "node-fetch": "^2.6.7",
+    "nodemon": "^2.0.15"
+  }
+}
