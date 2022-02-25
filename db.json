@@ -32,5 +32,18 @@
       "id": 8,
       "name": "Michael Collins"
     }
+  ],
+  "missions": [
+    {
+      "id": 1,
+      "crew": [
+        1,
+        4,
+        7
+      ],
+      "designation": "Apollo 1",
+      "startDate": "2022-02-25T21:29:09.639Z",
+      "endDate": "2022-02-28T21:29:09.639Z"
+    }
   ]
 }
