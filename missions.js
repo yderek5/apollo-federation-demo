@@ -7,7 +7,7 @@ const port = 4002;
 const apiUrl = "http://localhost:3000";
 
 const typeDefs = gql`
-  type Mission {
+  type Mission @key(fields: "id") {
     id: ID!
     crew: [Astronaut]
     designation: String!
@@ -21,7 +21,7 @@ const typeDefs = gql`
   }
 
   extend type Query {
-    mission(id: ID!): Mission 
+    mission(id: ID!): Mission
     missions: [Mission]
   }
 `;
@@ -36,6 +36,9 @@ const resolvers = {
     }
   },
   Mission: {
+    __resolveReference(ref) {
+      return fetch(`${apiUrl}/missions/${ref.id}`).then(res => res.json());
+    },
     crew(mission) {
       return mission.crew.map(id => ({__typename: "Astronaut", id}));
     }

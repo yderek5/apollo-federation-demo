@@ -7,6 +7,7 @@ const gateway = new ApolloGateway({
   serviceList: [
     { name: "astronauts", url: "http://localhost:4001" },
     { name: "missions", url: "http://localhost:4002" },
+    { name: "destinations", url: "http://localhost:4003" },
   ]
 })
 

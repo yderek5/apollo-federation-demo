@@ -8,7 +8,8 @@
     "server:rest": "json-server -q db.json",
     "server:astronaut": "nodemon astronauts.js",
     "server:mission": "nodemon missions.js",
-    "server:graphql": "nodemon index.js"
+    "server:destination": "nodemon destinations.js",
+    "server:gateway": "nodemon index.js"
   },
   "repository": {
     "type": "git",
